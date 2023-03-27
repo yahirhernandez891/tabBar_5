@@ -33,25 +33,25 @@ class _MyHomePageState extends State<MyHomePage> {
       child: Scaffold(
         appBar: AppBar(
           bottom: TabBar(
-            isScrollable: true,
             indicator: BoxDecoration(
                 borderRadius: BorderRadius.circular(50), // Creates border
-                color: Colors.greenAccent),
+                color: Colors.pinkAccent),
+            isScrollable: true,
             tabs: [
-              Tab(icon: Icon(Icons.flight)),
-              Tab(icon: Icon(Icons.directions_transit)),
-              Tab(icon: Icon(Icons.directions_car)),
-              Tab(icon: Icon(Icons.access_alarm_rounded)),
+              Tab(icon: Icon(Icons.home)),
+              Tab(icon: Icon(Icons.store)),
+              Tab(icon: Icon(Icons.search)),
+              Tab(icon: Icon(Icons.person)),
             ],
           ),
           title: Text('Tabs Demo'),
         ),
         body: TabBarView(
           children: [
-            Icon(Icons.flight, size: 350),
-            Icon(Icons.directions_transit, size: 350),
-            Icon(Icons.directions_car, size: 350),
-            Icon(Icons.access_alarm_rounded, size: 350),
+            Icon(Icons.home, size: 350),
+            Icon(Icons.store, size: 350),
+            Icon(Icons.search, size: 350),
+            Icon(Icons.person, size: 350),
           ],
         ),
       ),
